@@ -1,0 +1,18 @@
+Japanese Vocabulary Quiz Website
+
+1. Sound Effects
+2. Timer 
+	- Countdown per question
+	- Auto-submit on timeout
+	- Time-based scoring
+3. Improve Progress Bar
+4. Responsive Feedback Screen
+5. Randomization
+	- Shuffle questions 🟢
+	- Shuffle answers
+6. Japanese UI/UX Design 
+7. Total Question/ Score
+8. Next Question Button
+9. Progress Bar for Quiz Result
+10. Correct Streak Effects
+

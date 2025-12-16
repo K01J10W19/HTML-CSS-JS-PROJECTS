@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0fd221e0ee.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="screen active" id="start-screen">
+            <h1>N5 日本語名詞チャレンジ</h1>
+            <h3>毎日５０題で語彙力アップ</h3>
+            <p>
+                クイズ形式で N5 の基本日本語名詞をテストします。
+                <br>初心者の方でも気軽にチャレンジできます。
+            </p>
+            <button class="start-btn"><i class="fa-solid fa-play"></i>スタート!</button>
+        </div>
+
+        <div class="screen" id="quiz-screen">
+            <div class="quiz-header">
+                <h2 id="question-text">Question goes here</h2>
+                <div class="quiz-info">
+                    <p>
+                        問題 <span id="current-question">1</span> / <span id="total-questions">5</span>
+                    </p>
+                    <p>
+                        スコア: <span id="score">0</span>
+                    </p>
+                </div>
+            </div>
+            <div id="answers-container" class="answers-container">
+            </div>
+            <div class="progress-bar">
+                <div id="progress" class="progress"></div>
+            </div>
+        </div>
+
+        <div class="screen" id="result-screen" >
+            <h1>クイズ結果</h1>
+            <h3 id="star-review"></h3>
+            <div class="result-info">
+                <p>あなたのスコア: <span id="final-score">0</span> / <span id="max-score">5</span></p>
+                <div id="result-message">よくできました!</div>
+            </div>
+            <div class="btn-form">
+                <button id="restart-btn">もう一度挑戦</button>
+                <button id="home-btn">ホームに戻る</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup-info">
+        <h2>クイズガイド</h2>
+        <span class="info">1. 英語の単語が表示されます。</span>
+        <span class="info">2. 正しい日本語の意味を4つの選択肢から選びましょう。</span>
+        <span class="info">3. 正解するとスコアが増えます。不正解でも次へ進みます。</span>
+        <span class="info">4. クイズ終了後に得点を確認しできます。</span>
+
+        <div class="btn-group">
+            <button class="exit-btn">クイズを終了</button>
+            <button id="start-btn">スタート</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
